@@ -20,7 +20,7 @@ export const Search = () => {
                 type="text"
                 className="sm:w-96 w-80 h-10 dark:bg-gray-200 border rounded-full shadow-sm outline-none p-6 text-black hover:shadow-lg"
                 placeholder='Search Google'
-                onChange={(t) => setText(e.target.value)}
+                onChange={(e) => setText(e.target.value)}
             />
             {!text && (
                 <button type="button" onClick={() => setText('')} className="absolute top-1.5 right-4 text-2xl text-gray-500">

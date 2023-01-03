@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const links = [
     {url: '/search', text: '🔍 All'},
-    {url: '/images', text: '📷 Images'}
+    {url: '/imagesearch', text: '📷 Images'}
 ]
 export const Links = () => {
     return (

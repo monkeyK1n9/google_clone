@@ -19,7 +19,7 @@ export const Results = () => {
             }
         }
         // getResults('/search?query=guillaume DJIODJIO')
-    }, [location.pathname])
+    }, [searchTerm, location.pathname])
 
     if (isLoading) {
         return <Loading />
@@ -53,10 +53,10 @@ export const Results = () => {
         case '/imagesearch':
             return (
                 <div className="flex flex-wrap justify-center items-center">
-                    {results?.items?.map(({title, originalImageUrl, contextLink}, index) => {
+                    {results?.items?.map(({title, thumbnailImageUrl, contextLink}, index) => {
                         return (
                             <a className="sm:p-3 p-5" href={contextLink} key={index} target="_blank" rel="noreferrer">
-                                <img src={originalImageUrl} alt={title} loading="lazy" />
+                                <img src={thumbnailImageUrl} alt={title} loading="lazy" />
                                 <p className="w-36 break-words text-sm mt-2">
                                     {title}
                                 </p>

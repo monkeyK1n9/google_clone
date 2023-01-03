@@ -26,6 +26,14 @@ export const Results = () => {
     }
     console.log(location.pathname)
 
+    if (searchTerm == '') {
+        return (
+            <div className="flex flex-wrap w-full h-full justify-center items-center">
+                <h2 className="text-3xl m-40">Enter your search term</h2>
+            </div>
+        )
+    }
+
     switch (location.pathname) {
         case '/search':
             return (

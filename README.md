@@ -6,7 +6,7 @@
 | ![image](https://user-images.githubusercontent.com/91855362/210453232-9162463e-5c56-4a7b-82a3-3363582491ae.png) |
 
 ## Introduction
-This project is a google clone, makes use of the google search API. You can have a look [here](https://google-it-clone.netlify.app/). It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a google clone, makes use of the google search API. You can have a look [here](https://google-find-clone.netlify.app/). It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
